@@ -10,7 +10,7 @@ if "ans3_val" not in st.session_state:
     st.session_state.ans3_val = ""
 if "ans4_val" not in st.session_state:
     st.session_state.ans4_val = ""
-  def reset_game():
+def reset_game():
     st.session_state.ans1_val = ""  # เคลียร์ค่าช่องข้อ 1
     st.session_state.ans2_val = ""  # เคลียร์ค่าช่องข้อ 2
     st.session_state.ans3_val = ""  # เคลียร์ค่าช่องข้อ 3
@@ -49,13 +49,13 @@ def show_result_dialog(ans1, ans2 , ans3 , ans4):
     if u_ans4 == "avocado":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
-    else:
+   else:
         st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
        st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
-  if score == 4:
+    if score == 4:
         st.success("🎉 You win!")
-    else:
-        st.error("💀 You lose!")
+  else:
+     st.error("💀 You lose!")
       # ----------------------------------------------------
 # 1. ปุ่มเริ่มเล่นเกม
 # ----------------------------------------------------
