@@ -39,14 +39,14 @@ def show_result_dialog(ans1, ans2 , ans3 , ans4):
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
    # ตรวจข้อ 3
-    if u_ans3 == "cat":
+    if u_ans3 == "pencill":
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
     # ตรวจข้อ 4
-    if u_ans4 == "dog":
+    if u_ans4 == "avocado":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
@@ -82,11 +82,11 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 1: A `c_t` always sleeps. ",
+    "ข้อ 1: A boy lost his `p_nci_l` .✏️ ",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 2: A `_og` is a friendly animal.` ",
+    "ข้อ 2: Mike doestn't like `avoc_d_` .🥑 ",
     value=st.session_state.ans4_val,
 
 st.session_state.ans1_val = ans1
